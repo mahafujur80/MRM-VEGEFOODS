@@ -69,8 +69,9 @@ header ul li:hover a {
     border-radius: 7px;
 }
 
+/*Herder and nav end*/
 
-
+/*Responsiv NavBar Start*/
 .checkbtn {
     display: none;
     font-size: 25px;
@@ -83,7 +84,7 @@ header ul li:hover a {
     display: none;
 }
 
-/*Herder and nav end*/
+/*Responsiv NavBar End*/
 
 /*section Hero start*/
 .hero {
@@ -159,6 +160,7 @@ header ul li:hover a {
 
 /*section Hero end*/
 
+/*Section 3 start*/
 
 .section3 {
     width: 90%;
@@ -203,6 +205,9 @@ header ul li:hover a {
     font-size: 14px;
 }
 
+/*Section 3 End*/
+
+/*Section 4 Start*/
 
 .section4 {
     width: 85%;
@@ -283,6 +288,9 @@ header ul li:hover a {
     transform: scale(1.05)
 }
 
+/*Section 4 Start*/
+
+/*Section 5 Start*/
 
 .section5 {
     width: 100%;
@@ -387,7 +395,9 @@ header ul li:hover a {
     display: none;
 }
 
+/*Section 5 End*/
 
+/*Section 6 Start*/
 
 .section6 {
     width: 100%;
@@ -482,6 +492,9 @@ header ul li:hover a {
     font-weight: 700;
 }
 
+/*Section 6 End*/
+
+/*Section 7 Start*/
 
 .section7 {
     width: 100%;
@@ -583,6 +596,9 @@ header ul li:hover a {
     background-size: cover;
 }
 
+/*Section 7 End*/
+
+/*Section 8 Start*/
 
 .section8 {
     width: 100%;
@@ -626,6 +642,9 @@ header ul li:hover a {
     opacity: 0.9;
 }
 
+/*Section 8 End*/
+
+/*Section 9 Start*/
 
 .section9 {
     width: 100%;
@@ -657,7 +676,7 @@ header ul li:hover a {
     box-shadow: 2px 2px 5px rgb(173, 172, 172), -2px -2px 5px rgb(173, 172, 172);
 }
 
-.section9 button {
+.section9 .button {
     border: none;
     outline: none;
     background: #47a32b;
@@ -674,7 +693,15 @@ header ul li:hover a {
 
 }
 
+/*Section 9 End*/
 
+/*hr line after section 9 start*/
+.hr-forphone {
+    display: none;
+}
+/*hr line after section 9 End*/
+
+/*Section footer Start*/
 footer {
     width: 100%;
     height: 400px;
@@ -741,9 +768,10 @@ footer .contain div .social:hover {
     color: blue;
 }
 
-footer .lastFooter {
-    position: absolute;
-    bottom: 0;
+/*Section footer End*/
+
+/*Section LastFooter Start*/
+.lastFooter {
     width: 100%;
     height: 35px;
     background-color: rgb(66, 65, 65);
@@ -752,11 +780,11 @@ footer .lastFooter {
     padding-top: 10px;
 }
 
-footer .lastFooter p {
+.lastFooter p {
     font-size: 15px;
 }
 
-footer .lastFooter a {
+.lastFooter a {
     color: white;
     text-decoration: none;
     margin-left: 10px;
@@ -765,18 +793,21 @@ footer .lastFooter a {
     border-radius: 5px;
 }
 
-footer .lastFooter a:hover {
+.lastFooter a:hover {
     background-color: #284ae4;
     transition: all 0.3s;
     box-shadow: 1px 1px 2px rgb(134, 132, 132), -1px -1px 2px rgb(134, 132, 132);
 }
 
+/*Section LastFooter End*/
 
+/*Responsive For Mobile Device Start*/
 @media (max-width:768px) {
 
     /*Header section Start*/
+
     header .logo {
-        gap: 20px;
+        gap: 15px;
         margin-left: 20px;
         font-size: 10px;
     }
@@ -791,24 +822,25 @@ footer .lastFooter a:hover {
         display: block;
     }
 
-    header .nav ul {
+    header ul {
         position: fixed;
         width: 100%;
-        height: 40;
+        height: auto;
+        margin: 0 auto;
         background: #82ad45;
         left: 0px;
-        top: -200%;
-        transition: all 0.8s ease-out;
+        top: -100%;
+        transition: all 0.5s ease-out;
+        text-align: center;
     }
 
-    header ul {
-        height: 40px;
-        display: flex;
+    header ul li {
+        margin: 5px 0px;
     }
 
     header ul li a {
         color: white;
-        margin: 0 5px;
+        margin: 0px 5px;
     }
 
     #check:checked~ul {
@@ -816,7 +848,7 @@ footer .lastFooter a:hover {
     }
 
     header ul li .cart {
-        padding: 2px 10px;
+        padding: 2px 5px;
     }
 
     header ul li .cart:hover {
@@ -824,8 +856,8 @@ footer .lastFooter a:hover {
     }
 
     header ul li a {
-        font-size: 14px;
-        padding: 5px 10px;
+        font-size: 12px;
+        padding: 0px 6px;
     }
 
     header .nav ul li a:hover {
@@ -838,6 +870,7 @@ footer .lastFooter a:hover {
     /*Header section End*/
 
     /*Hero Section Start*/
+
     .hero {
         width: 100%;
         height: 400px;
@@ -846,12 +879,12 @@ footer .lastFooter a:hover {
     }
 
     .hero .info h2 {
-        font-size: 35px;
+        font-size: 30px;
         padding-top: 35px;
     }
 
     .hero .info h1 {
-        font-size: 50px;
+        font-size: 45px;
         line-height: 50px;
     }
 
@@ -865,4 +898,415 @@ footer .lastFooter a:hover {
         font-size: 15px;
     }
 
+    /*hero section end*/
+
+    /*section 3  start*/
+
+    .section3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section3 div {
+        width: 150px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .section3 div i {
+        color: #4dcc2d;
+        font-size: 20px;
+        margin: 15px 0px 10px 0px;
+    }
+
+    .section3 div h1 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .section3 div p {
+        font-size: 12px;
+    }
+
+    /*Section 3 end*/
+
+    /*Section 4 start*/
+
+    .section4 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 150px;
+    }
+
+    .section4 div {
+        width: 150px;
+        height: 100px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .section4 div img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .section4 div a {
+        font-size: 10px;
+    }
+
+    .section4 div a:hover {
+        background-color: #309716;
+    }
+
+    .section4 .section4-text h1 {
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .section4 .section4-text p {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .section4 .section4-text .btn {
+        font-size: 10px;
+    }
+
+    /*section 4 End*/
+
+    /*Section 5 Start*/
+
+    .section5 {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .section5 .section5-text {
+        width: 95%;
+        line-height: 40px;
+    }
+
+    .section5 .section5-text h3 {
+        font-size: 15px;
+    }
+
+    .section5 .section5-text h1 {
+        font-size: 30px;
+    }
+
+    .section5 .section5-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .section5 .fruitsCard {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .section5 .fruitsCard div {
+        width: 160px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    .section5 .fruitsCard img {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .section5 .fruitsCard p {
+        font-size: 14px;
+    }
+
+    .section5 .fruitsCard h4 {
+        font-size: 15px;
+    }
+
+    .section5 .fruitsCard div .icon {
+        position: absolute;
+        bottom: 0;
+        font-size: 17px;
+    }
+
+    /*Section 5 Ends*/
+
+    /*Section 6 Start*/
+
+    .section6 {
+        width: 100%;
+        height: auto;
+    }
+
+    .section6 .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .section6 .container div {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .section6 .container div h3 {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .section6 .container div h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    .section6 .container div p {
+        font-size: 11px;
+        padding-bottom: 0px;
+    }
+
+    .section6 .container div h4 {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+
+    .section6 .container div span {
+        font-size: 12px;
+    }
+
+    .section6 .container div a {
+
+        font-size: 10px;
+        font-weight: 400;
+        padding: 3px 5px;
+        margin-left: 4px;
+    }
+
+    .section6 .container div i {
+        display: inline-block;
+        color: rgb(171, 12, 219);
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+
+    .section6 .container div time {
+        font-size: 20px;
+        font-weight: 600;
+        color: #284ae4;
+    }
+
+    /*Section 6 end*/
+
+    /*Section 7 Start*/
+
+    .section7 {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .section7 .section7-text {
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+    }
+
+    .section7 .section7-text h2 {
+        font-size: 17px;
+        padding-bottom: 0px;
+    }
+
+    .section7 .section7-text h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .section7 .section7-text p {
+        opacity: 0.6;
+        font-size: 12px;
+        padding-bottom: 50px;
+    }
+
+    .section7 .container-Sec7 {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .section7 .container-Sec7 div {
+        width: 150px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .section7 .container-Sec7 div p {
+        margin-top: 80px;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .section7 .container-Sec7 div h1 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .section7 .container-Sec7 div span {
+        font-size: 9px;
+    }
+
+    .section7 .container-Sec7 .cutomer-img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 15px;
+    }
+
+    /*Section 7 End*/
+
+    /*Section 8 Start*/
+    .section8 {
+        display: none;
+    }
+    /*Section 8 End*/
+
+    /*section 9 start*/
+
+    .section9 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .section9 div {
+        height: auto;
+        width: 95%;
+        text-align: center;
+    }
+
+    .section9 h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .section9 div p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .section9 form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section9 .search {
+        width: 200px;
+        height: 15px;
+        padding: 15px 15px;
+    }
+
+    .section9 .button {
+        font-size: 12px;
+        padding: 5px 8px 8px 8px;
+        border-radius: 5px;
+    }
+
+    .hr-forphone {
+        display: block;
+    }
+
+    /*Section 9 End*/
+
+    /*footer start*/
+
+    footer {
+        width: 100%;
+        height: auto;
+
+    }
+
+    footer .contain {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding-top: 20px;
+    }
+
+    footer .contain div {
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    footer .contain div ul,
+    ol {
+        line-height: 20px;
+    }
+
+    footer .contain div a {
+        font-size: 11px;
+    }
+
+    footer .contain div a:hover {
+        font-size: 12px;
+    }
+
+    footer .contain div h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    footer .contain div p {
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+
+    footer .contain div span {
+        margin-left: 0px;
+    }
+
+    footer .contain div .social {
+        font-size: 15px;
+        margin: 10px 5px;
+    }
+
+  /*Footer End*/
+
+  /*Last Footer start*/
+
+    .lastFooter {
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        padding: 10px;
+    }
+
+    .lastFooter p {
+        font-size: 10px;
+    }
+
+    .lastFooter a {
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+        background-color: #3dc51b;
+        padding: 2px 4px;
+        border-radius: 5px;
+    }
+   /*Last Footer End*/
+
 }
+/*Responsive For Mobile Device Start*/
