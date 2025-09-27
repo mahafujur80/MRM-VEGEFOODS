@@ -35,9 +35,9 @@ Desktop View: Full layout with multiple columns
 
 Mobile View: Simplified design, two-column grid, mobile-friendly navigation
 
-Tablet Support: Smooth adaptive layout
 
 📂 Project Structure
+
 📦 Vegetable-Fruits-Shop
  ┣ 📂 img        # All images (banner, products, logo)
  ┣ 📂 css        # Stylesheet files
@@ -45,11 +45,16 @@ Tablet Support: Smooth adaptive layout
  ┗ 📜 README.md  # Project documentation
 
 🌟 Live Demo
-👉 Click Here to View Website 
+
+👉 Click Here to View Website
+
+https://mahafujur80.github.io/MRM-VEGEFOODS/
 
 
 🤝 Contributing
+
 If you find any bugs or want to suggest new features, feel free to create a Pull Request.
 
 📜 License
+
 This project is Free to Use for educational purposes.
