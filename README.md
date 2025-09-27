@@ -39,9 +39,13 @@ Mobile View: Simplified design, two-column grid, mobile-friendly navigation
 📂 Project Structure
 
 📦 Vegetable-Fruits-Shop
+
  ┣ 📂 img        # All images (banner, products, logo)
+
  ┣ 📂 css        # Stylesheet files
+
  ┣ 📜 index.html # Main webpage
+ 
  ┗ 📜 README.md  # Project documentation
 
 🌟 Live Demo
